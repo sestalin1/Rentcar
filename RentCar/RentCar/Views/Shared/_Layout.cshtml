@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("RentCart", "Index", "RentAndReturns", null, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Marcas", "Index", "Brands", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Clientes", "Index", "Clients", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Emleados", "Index", "Employees", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Combustibles", "Index", "FuelTypes", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Inspecciones", "Index", "Inspections", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Rentas y Devoluciones", "Index", "RentAndReturns", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Modelos", "Index", "VehicleModels", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Vehiculos", "Index", "Vehicles", new { area = "" }, null)</li>
+                    <li>@Html.ActionLink("Tipos de Vehiculos", "Index", "VehicleTypes", new { area = "" }, null)</li>
+                    <!--<li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - RentCart</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,107 @@
+﻿@model RentCar.Inspections
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Inspections</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HaveScratches)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HaveScratches)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FuelAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FuelAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HasSpareTire)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HasSpareTire)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HasJack)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HasJack)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HaveBrokenGlass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HaveBrokenGlass)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TiresSate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TiresSate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Clients.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clients.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Employees.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employees.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vehicles.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vehicles.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

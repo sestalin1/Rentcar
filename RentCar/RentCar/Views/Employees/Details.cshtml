@@ -1,0 +1,67 @@
+﻿@model RentCar.Employees
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employees</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IDCard)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDCard)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WorkShift)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WorkShift)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CommissionPercentage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CommissionPercentage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HireDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HireDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

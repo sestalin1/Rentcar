@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cce5df80156e4a17b1ea3ddeddf2b205" Name="Diagram1">
+        <EntityTypeShape EntityType="RENTCARTModel.Brands" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RENTCARTModel.Clients" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RENTCARTModel.Employees" Width="1.5" PointX="5.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RENTCARTModel.FuelTypes" Width="1.5" PointX="7.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RENTCARTModel.Inspections" Width="1.5" PointX="7.5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RENTCARTModel.RentAndReturns" Width="1.5" PointX="10.5" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RENTCARTModel.VehicleModels" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RENTCARTModel.Vehicles" Width="1.5" PointX="5.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RENTCARTModel.VehicleTypes" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <AssociationConnector Association="RENTCARTModel.fk_Model_Brands" ManuallyRouted="false" />
+        <AssociationConnector Association="RENTCARTModel.fk_Vehicles_FuelTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="RENTCARTModel.pk_Inspections_Clients" ManuallyRouted="false" />
+        <AssociationConnector Association="RENTCARTModel.pk_RentAndReturns_Clients" ManuallyRouted="false" />
+        <AssociationConnector Association="RENTCARTModel.pk_Inspections_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="RENTCARTModel.pk_RentAndReturns_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="RENTCARTModel.pk_Inspections_Vehicles" ManuallyRouted="false" />
+        <AssociationConnector Association="RENTCARTModel.pk_RentAndReturns_Vehicles" ManuallyRouted="false" />
+        <AssociationConnector Association="RENTCARTModel.fk_Vehicles_Models" ManuallyRouted="false" />
+        <AssociationConnector Association="RENTCARTModel.fk_Vehicles_VehicleTypes" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
