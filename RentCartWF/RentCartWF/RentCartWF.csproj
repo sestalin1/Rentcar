@@ -73,17 +73,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RENTCARTDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="VehclesType.cs">
+    <Compile Include="App.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VehclesType.Designer.cs">
-      <DependentUpon>VehclesType.cs</DependentUpon>
+    <Compile Include="App.Designer.cs">
+      <DependentUpon>App.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="FuelTypes.cs">
       <DependentUpon>RCModel.tt</DependentUpon>
@@ -120,11 +120,11 @@
     <Compile Include="VehicleTypes.cs">
       <DependentUpon>RCModel.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="VehclesType.resx">
-      <DependentUpon>VehclesType.cs</DependentUpon>
+    <EmbeddedResource Include="App.resx">
+      <DependentUpon>App.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -179,6 +179,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RCModel.edmx.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
